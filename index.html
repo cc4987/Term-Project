@@ -6,18 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Recs</title>
 <style>
-     body{
-            background-color: rgb(180, 225, 192);
+    body{
+        background-color: rgb(180, 225, 192);
         }
-        h1{
-            text-align: center;
-            font-size:16pt;
-        }
-      form {
-        border: 1px solid gray;
-        padding: 10px;
+    h1{
         text-align: center;
-      }
+        font-size:16pt;
+        }
+    form {
+        --b: 5px;  /* border thickness */
+        --s: 30px; /* size of the dashes */
+        --c1: #215A6D;
+        --c2: #92C7A3;
+  
+  width: 250px;
+  aspect-ratio: 1;
+  position: relative;
+}
+form::before {
+  content:"";
+  position: absolute;
+  inset: 0;
+  padding: var(--b);
+  background: 
+    repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+    0 0/var(--s) var(--s) round;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+    p {
+        text-align: center;
+    }
 </style>
 </head>
 <body>

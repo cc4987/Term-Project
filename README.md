@@ -29,3 +29,5 @@ I'm not sure what topics will be beneficial thus far, but I imagine that what we
 
 ### **How to run the code!**
 + Make sure to install pandas, NumPy, seaborn, nltk and matplotlib if you haven't already.
++ install credits.csv, keywords.csv, movies_metadata.csv, ratings_small.csv from
+* can be found here! https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset 
