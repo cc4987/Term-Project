@@ -44,13 +44,24 @@ form::before {
         text-align: center;
     }
 </style>
+<script type="text/javascript">
+    function addBorder()
+        {
+            document.getElementById("butt").style.border="5px ridge red";
+        }
+
+    function removeBorder()
+        {
+            document.getElementById("butt").style.border="none";
+        }
+</script>
 </head>
 <body>
     <h1>If you need a movie recommendation, you have come to the right place!</h1>
     <p>Enter a movie name below, and get recommendations just for you!</p>
     <form id = "form" action="" method="post">
         <label for="">Movie name: <input type="text" name="movie_name" /></label>
-        <button type="submit">Find new movies!</button>
+        <button id ="butt" onmouseover="addBorder()" onmouseout="removeBorder()"type="submit">Find new movies!</button>
     </form>
     
 </body>
