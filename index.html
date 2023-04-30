@@ -43,6 +43,12 @@ form::before {
     p {
         text-align: center;
     }
+    butt {
+        padding-top: 5px;
+    }
+    main {
+        text-align: center;
+    }
 </style>
 <script type="text/javascript">
     function addBorder()
@@ -59,10 +65,11 @@ form::before {
 <body>
     <h1>If you need a movie recommendation, you have come to the right place!</h1>
     <p>Enter a movie name below, and get recommendations just for you!</p>
+    <div id = main>
     <form id = "form" action="" method="post">
         <label for="">Movie name: <input type="text" name="movie_name" /></label>
         <button id ="butt" onmouseover="addBorder()" onmouseout="removeBorder()"type="submit">Find new movies!</button>
     </form>
-    
+    </div>
 </body>
 </html>
