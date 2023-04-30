@@ -26,3 +26,6 @@ I think the most significant threat to this project's success is not staying on 
 
 ### **Additional Course Content**
 I'm not sure what topics will be beneficial thus far, but I imagine that what we've learned about app creation and APIs will be beneficial!
+
+### **How to run the code!**
++ Make sure to install pandas, NumPy, seaborn, nltk and matplotlib if you haven't already.
