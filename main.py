@@ -137,9 +137,9 @@ def get_recs(title, n, cosine_sim=similarity):
 
 
 # getting recs
-movie_name = 'Spectre'
+title = 'Spectre'
 number_of_recs = 15
-top_titles_df, _ = get_recs(movie_name, number_of_recs)
+top_titles_df, _ = get_recs(title, number_of_recs)
 print(top_titles_df)
 
 # visualization
@@ -150,7 +150,7 @@ plt.xlim((0, 1))
 plt.xlabel('Similarity score')
 plt.ylabel('Movie title')
 plt.title(
-    f'Here are {number_of_recs} similar recommendations to the movie {movie_name}')
-plt.show(movie_name, top_titles_df)
+    f'Here are {number_of_recs} similar recommendations to the movie {title}')
+plt.show(title, top_titles_df)
 
 # numpy.core._exceptions._ArrayMemoryError: Unable to allocate 83.1 GiB for an array with shape (45432, 245588) and data type float64
